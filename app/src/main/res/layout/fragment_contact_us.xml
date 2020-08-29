@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_us_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/colorText"
+    android:background="@color/colorBackground"
+    tools:context=".ui.contactUs.ContactUsFragment" >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="307dp"
+        android:layout_height="99dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/contact_us"
+        android:textColor="@color/colorText"
+        android:background="@color/colorBackground"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <EditText
+        android:id="@+id/editTextEmailRegister"
+        android:layout_width="315dp"
+        android:layout_height="64dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_your_email"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:background="@color/colorBackground"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <EditText
+        android:id="@+id/editTextSubject"
+        android:layout_width="315dp"
+        android:layout_height="64dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/what_is_it_about"
+        android:inputType="text"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:background="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <EditText
+        android:id="@+id/editTextBody"
+        android:layout_width="314dp"
+        android:layout_height="121dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/go_ahead_we_are_listening"
+        android:inputType="text"
+        android:singleLine="false"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:background="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="194dp"
+        android:layout_height="52dp"
+        android:text="@string/submit"
+        android:textColor="@color/colorText"
+        android:backgroundTint="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

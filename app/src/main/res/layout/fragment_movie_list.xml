@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textColor="@color/colorText"
+    android:background="@color/colorBackground"
+    tools:context=".ui.movieList.MovieListFragment">
+
+    <Button
+        android:id="@+id/buttonOpenFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_filter_cap" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutFilter"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteX="-29dp"
+        tools:layout_editor_absoluteY="15dp">
+
+        <Button
+            android:id="@+id/buttonSearchFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/dash"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.61"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.649" />
+
+        <EditText
+            android:id="@+id/editTextDateFilterFrom"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.374" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/dash"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.61"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
+
+        <EditText
+            android:id="@+id/editTextDateFilterTo"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.946"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.374" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/releasedate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.374" />
+
+        <EditText
+            android:id="@+id/editTextRatingFilterTo"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.946"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.984" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imdp_rating"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.029"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.931" />
+
+        <EditText
+            android:id="@+id/editTextRatingFilterFrom"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.984" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/dash"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.61"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.941" />
+
+        <EditText
+            android:id="@+id/editTextDurationFilterTo"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.943"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.656" />
+
+        <EditText
+            android:id="@+id/editTextDutationFilterFrom"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.673" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duration"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.647" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMovieList"
+        android:layout_width="match_parent"
+        android:layout_height="557dp"
+        android:textColor="@color/colorText"
+        android:background="@color/colorBackground"        android:scrollbars="vertical"
+        tools:listitem="@layout/recycler_view_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

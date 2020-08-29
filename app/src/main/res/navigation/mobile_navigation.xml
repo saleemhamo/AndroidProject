@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_movie_list">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="androidlab.project.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="androidlab.project.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_rated_list"
+        android:name="androidlab.project.ui.ratedList.RatedListFragment"
+        android:label="@string/rated_list"
+        tools:layout="@layout/fragment_rated_list" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="androidlab.project.ui.logout.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_watch_list"
+        android:name="androidlab.project.ui.watchList.WatchListFragment"
+        android:label="@string/watch_list"
+        tools:layout="@layout/fragment_watch_list" />
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="androidlab.project.ui.contactUs.ContactUsFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/nav_movie_list"
+        android:name="androidlab.project.ui.movieList.MovieListFragment"
+        android:label="@string/movie_list"
+        tools:layout="@layout/fragment_movie_list" />
+
+</navigation>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movieItemFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:textColor="@color/colorText"
+
+    tools:context=".ui.movieList.MovieItemFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMovieItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:textColor="@color/colorText">
+
+
+            <ImageView
+                android:id="@+id/imageViewItem"
+                android:layout_width="190dp"
+                android:layout_height="250dp"
+                android:layout_marginHorizontal="110dp"
+                android:contentDescription="@string/image"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/textViewItemTitle"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewItemYear"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewItemDuration"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewItemeReleaseDate"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewItemImdpRating"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewItemGenres"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewItemActors"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewItemStoryLine"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBarItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="90dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/colorBackground"
+                android:textColor="@color/colorText" />
+
+            <LinearLayout
+                android:id="@+id/commentsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:orientation="vertical"
+                android:textColor="@color/colorText"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground"
+                android:orientation="vertical"
+                android:textColor="@color/colorText">
+
+                <EditText
+                    android:id="@+id/editTextComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:background="@color/colorBackground"
+                    android:ems="10"
+                    android:hint="Write a Comment..."
+                    android:textColorHint="@color/colorText"
+                    android:inputType="text"
+                    android:textColor="@color/colorText" />
+
+                <Button
+                    android:id="@+id/buttonComment"
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="260dp"
+                    android:background="@color/colorBackground"
+                    android:text="Add Comment"
+                    android:textColor="@color/colorText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

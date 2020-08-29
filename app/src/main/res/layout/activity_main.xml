@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:textColor="@color/colorText"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="329dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/gravitas_one"
+        android:text="@string/movienet"
+        android:textAlignment="center"
+        android:textColor="#CB0202"
+        android:background="@color/colorBackground"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/textViewEmail10"
+        android:layout_width="262dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/gravitas_one"
+        android:text="@string/movie_library"
+        android:textAlignment="center"
+        android:textColor="#CB0202"
+        android:background="@color/colorBackground"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonLoadData"
+        android:layout_width="382dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/gravitas_one"
+        android:text="@string/load_data"
+        android:background="@color/colorBackground"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <TextView
+        android:id="@+id/textViewMainText"
+        android:layout_width="338dp"
+        android:layout_height="126dp"
+        android:fontFamily="@font/gravitas_one"
+        android:text="@string/this_application_is_made_as_a_hypothetical_movie_library_app_for_encs515_lab_saleem_hamo_n1170381"
+        android:textAlignment="center"
+        android:background="@color/colorBackground"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="245dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/colorBackground"
+        android:fontFamily="@font/gravitas_one"
+        android:text="Continue"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+</androidx.constraintlayout.widget.ConstraintLayout>

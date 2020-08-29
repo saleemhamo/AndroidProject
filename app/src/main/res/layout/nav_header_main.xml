@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+
+    android:gravity="bottom"
+    android:background="@color/colorBackground"
+    android:textColor="@color/colorText"
+   >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="107dp"
+        android:layout_height="87dp"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179"
+        app:srcCompat="@drawable/ic_name" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/themeSwitch"
+        android:layout_width="167dp"
+        android:layout_height="59dp"
+        android:text="@string/light_night_mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201"
+        android:textOff="@string/light_mode"
+        android:textOn="@string/night_mode"
+        />
+
+    <TextView
+        android:id="@+id/textViewNavName"
+        android:layout_width="144dp"
+        android:layout_height="31dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="@string/nav_header_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <TextView
+        android:id="@+id/textViewNavEmail"
+        android:layout_width="190dp"
+        android:layout_height="27dp"
+        android:text="@string/nav_header_subtitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

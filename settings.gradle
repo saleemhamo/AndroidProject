@@ -1,0 +1,3 @@
+include ':greenDaoGenerator'
+include ':app'
+rootProject.name = "1170381-SaleemHamo-Project-MovieApp"
